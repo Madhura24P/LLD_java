@@ -10,7 +10,7 @@ public class VendingMachineDemo {
 		Product p1=new Product("coke", 2);
 		
 		v.invt.addProduct(p1, 10);
-		
+		  
 		v.selectProduct(p1);
 		
 		v.insertCoins(Coins.PENNY);
