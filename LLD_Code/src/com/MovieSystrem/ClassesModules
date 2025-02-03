@@ -1,0 +1,38 @@
+User class
+--
+mobile num
+email
+credit card/payment
+
+bookMovie(movie,theatre,showtime,seat)
+
+Movie class
+--
+id
+details
+duration
+
+
+Theatre class
+--
+Map<movie,show times>
+Map<Seat,isAvail> normal
+Map<Seat,isAvail> prem
+updasteseat
+aadmovie
+removemovie
+
+
+Seat enum
+normal
+premium
+
+BMS/show
+
+concurrentmap : thetres,movie
+concurrent : u , bookings
+bookMovie(u1,m1,t1,s1);
+movielist(t,m)
+
+
+

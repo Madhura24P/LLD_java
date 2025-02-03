@@ -1,0 +1,17 @@
+ATM sys
+balance inqry(u1,a1)
+valid User
+
+cashwithdrawal(u1,a1,amt1)
+
+cashdeposit(u1,a1,depamt)  
+
+
+Authenticate class/
+
+validate user
+
+
+U%ser6
+
+

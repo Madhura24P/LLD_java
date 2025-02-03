@@ -1,0 +1,43 @@
+Concert
+id
+artist
+ListSeat--isAvailable or not
+
+/
+Seat
+type
+price
+
+User 
+email
+id
+num
+ListConcets
+bookConcert(concert,seat);
+cancelConcert()
+
+
+Bookings
+booking Id
+concurrentMap: user:concertdetails/
+concurrentMap:Concert,seats---view
+*
+confirmBooking
+cancelBooking  
+
+
+
+TBS*
+singleton
+bookconcert(u1,c1,s1)
+viewConcerts(list<c>)
+
+
+
+
+viewConcertDetails
+bookConcert
+cancelConcert
+
+
+TBSDemo

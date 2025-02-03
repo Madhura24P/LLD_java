@@ -1,0 +1,112 @@
+CarRentalSystem
+-car
+-user
+-booking
+Map<car,available>
+
+
+addCar
+browserCar---depending on type or date or avaialbility
+reserveCar
+cancelbooking
+returnCar
+
+
+Bookings
+Map<bookingid,carId>
+user
+car
+
+bookCar(user,car,price,bookingid)--change availability-false 
+returnCar --availability--true;remove from booking map
+
+
+User
+firstName
+license
+Card details
+
+paymentmethod
+
+
+Car
+-carId
+-model
+-Car Type Enum
+-year
+-license
+-rentalPriceperDay
+-availability
+
+
+
+
+Coffee
+-Type
+-recepe
+-price
+
+ingredient
+qty
+name 
+
+
+
+coffevendingmachineClient
+
+MachineFacade
+List<Coffee>
+User u
+order o
+
+
+displayCoffeeOptions
+selectCoffee(user,coffee)
+
+
+Orders
+orderId
+
+bookOrder(user,coffee)
+calculate payment amt
+makePayment(type,amt)
+
+
+Payment Interface
+Card
+UPI
+
+
+
+courseRegClient
+addCourse
+viewCourse
+addStudent
+
+courseRegSystem
+
+
+registerCourses
+viewCourse(student)
+addStudent(Student)
+searchCourse()--codename or CourseName
+
+
+Registration
+List<Course>
+Map<Student,Courses>
+
+registercourse()--register , update seat count
+
+
+
+Student
+Id
+Name
+List<course>
+
+Course
+CodeName
+Seats
+Name
+regcount
