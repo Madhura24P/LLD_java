@@ -57,6 +57,9 @@ class MediaAdapter implements MediaPlayer {
  }
 }
 
+
+
+
 //Client class using the adapter
 class AudioPlayer implements MediaPlayer {
  private MediaAdapter mediaAdapter;
