@@ -1,0 +1,68 @@
+package com.HotelManagement;
+
+public class Room {
+	private final String id;
+	private final RoomType type;
+	private final double price;
+	private RoomStatus status;
+	public Room(String id, RoomType type, double price) {
+		super();
+		this.id = id;
+		this.type = type;
+		this.price = price;
+		this.status=RoomStatus.AVAILABLE;
+	}
+	
+	public synchronized void book()
+	{
+		if(status==RoomStatus.AVAILABLE)
+		{
+			status=RoomStatus.BOOKED;
+		}else
+		{
+			throw new IllegalStateException("Room is not available for booking");
+		}
+	}
+	
+	public synchronized void checckIn()
+	{
+		if(status==RoomStatus.BOOKED)
+		{
+			status=RoomStatus.OCCUPIED;
+		}
+		
+	}
+
+	public synchronized void checckOut()
+	{
+		if(status==RoomStatus.OCCUPIED)
+		{
+			status=RoomStatus.AVAILABLE;
+		}
+		
+	}
+
+	public RoomStatus getStatus() {
+		return status;
+	}
+
+	public void setStatus(RoomStatus status) {
+		this.status = status;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public RoomType getType() {
+		return type;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+	
+	
+	
+
+}
